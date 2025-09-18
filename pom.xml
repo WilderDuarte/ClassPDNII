@@ -70,7 +70,15 @@
                 <scope>test</scope>
             </dependency>
 
-	</dependencies>
+            <!-- Lombok = herramienta para generar getters, setters, constructores, etc. automáticamente. La Versión explícita es porque no es parte del BOM de Spring Boot. -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.32</version>
+                <scope>provided</scope>
+            </dependency>
+        
+    </dependencies>
 
 	<build>
 		<plugins>
