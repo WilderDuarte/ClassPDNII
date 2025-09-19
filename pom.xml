@@ -30,47 +30,29 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
-            <!-- Spring Web (REST API con Spring MVC y servidor Tomcat embebido) -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
-
-            <!-- Spring Data JPA (mapear entidades Java a tablas con Hibernate) -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
             </dependency>
-
-            <!-- Validaciones con Jakarta Bean Validation (anotaciones como @NotBlank, @Email, @Size, @Past) -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-validation</artifactId>
             </dependency>
-
-            <!-- Base de datos en memoria H2 (ideal para pruebas rápidas sin instalar nada) -->
             <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <scope>runtime</scope>
             </dependency>
-
-            <!-- Herramientas de desarrollo (recarga automática de la app al guardar cambios en el código) -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-devtools</artifactId>
                 <scope>runtime</scope>
                 <optional>true</optional>
             </dependency>
-
-            <!-- Dependencias de pruebas unitarias e integración (JUnit, AssertJ, Spring Test) -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
-            </dependency>
-
-            <!-- Lombok = herramienta para generar getters, setters, constructores, etc. automáticamente. La Versión explícita es porque no es parte del BOM de Spring Boot. -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
